@@ -1,0 +1,221 @@
+body {
+    /* background-color:white; */
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    padding: 30px 60px 0 60px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.cc{
+    color: #ff5d5d;
+}
+
+/* HEADER */
+
+header img {
+    width: 200px;
+}
+
+.topmenu {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.topmenu ul {
+    display:flex;
+}
+
+.topmenu ul li {
+    margin: 20px;
+    font-weight: bold;
+}
+
+.button{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+/* FIN HEADER */
+
+/* MENU PRINCIPAL */
+.subtitle {
+    margin: 20px 0px;
+    font-size: 12px;
+}
+
+.mainmenu ul {
+    display:flex;
+    justify-content: space-between;
+}
+
+.mainmenu li {
+    flex: 1;
+    border: black solid 1px;
+    font-weight: bold;
+    padding: 20px 10px 20px 10px;
+    border-radius: 15px;
+    margin:5px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+/* FIN MENU PRINCIPAL */
+
+/* PHOTOS PRINCIPALES */
+
+.images {
+    /* background: salmon; */
+    margin-top: 50px;
+    height: 400px;
+    display: flex;
+    gap: 2px;
+  }
+  
+  .images .left {
+    flex: 4;
+    /* background: blue; */
+    background-image: url("../img/img_main1.jpg");
+  }
+  
+  .images .right {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .images .right-top {
+    /* background: green; */
+    background-image: url("../img/img_main2.jpg");
+  
+    flex: 1;
+  }
+  
+  .images .right-bottom {
+    /* background: yellow; */
+    background-image: url("../img/img_main3.jpg");
+    flex: 1;
+  }
+  
+  .images .center-background {
+    background-size: cover;
+    background-position: center;
+  }
+
+/* FIN PHOTOS PRINCIPALES */
+
+.subimg {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 50px;    
+}
+
+.maintext {
+    margin: 20px 0 60px 0;
+    width: 600px;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+/* LES IMMANQUABLES */
+.divert {
+    /* background: salmon; */
+    height: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.left-divert {
+    /* background: blue; */
+    flex: 1;
+}
+
+.left-divert p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 18px;
+}
+
+.right-divert {
+    /* background: green; */
+    flex: 3;
+    display: flex;
+    gap: 15px;
+    overflow-x: scroll;
+    
+}
+
+.right-divert-detail {
+    /* background: yellow; */
+    width: 280px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right-divert-detail-top {
+    /* background: aqua; */
+    flex: 2;
+    position: relative;
+}
+
+.right-divert-detail-bottom {
+    /* background: blueviolet; */
+    flex: 1;
+}
+
+.right-divert-detail-top .immanquable-vignet {
+    width: 280px;
+    height: 185px;
+    object-fit: cover;
+}
+
+.right-divert-detail-top .petit-logo {
+    width: 33px;
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+}
+
+.right-divert-detail-top .heart-logo {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+/* FIN LES IMMANQUABLES */
