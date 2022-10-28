@@ -16,7 +16,8 @@ a {
 }
 
 main {
-    padding: 30px 60px 0 60px;
+    /* padding: 30px 60px 0 60px; */
+    padding: 30px 0;
 }
 
 h1 {
@@ -37,6 +38,8 @@ h3 {
 .cc{
     color: #ff5d5d;
 }
+
+
 
 /* HEADER */
 
@@ -80,7 +83,8 @@ header img {
 }
 
 .mainmenu li {
-    flex: 1;
+    /* flex: 1; */
+    width: 25%;
     border: black solid 1px;
     font-weight: bold;
     padding: 20px 10px 20px 10px;
@@ -89,6 +93,10 @@ header img {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+}
+
+.mainmenu .hidden {
+    display: none;
 }
 /* FIN MENU PRINCIPAL */
 
@@ -200,8 +208,10 @@ header img {
 }
 
 .right-divert-detail-top .immanquable-vignet {
-    width: 280px;
-    height: 185px;
+    /* width: 280px;
+    height: 185px; */
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -219,5 +229,52 @@ header img {
     
 }
 
-
 /* FIN LES IMMANQUABLES */
+
+
+/* RESPONSIVE */
+@media (max-width: 1184px) {
+    .container {
+      background: rgba(0, 0, 255, 0.198);
+      margin: 0 25px;
+    }
+    .mainmenu .hidden {
+        display: flex;
+    }
+    .mainmenu ul {
+        flex-wrap: wrap;
+    }
+    .mainmenu li {
+        width: 20%;
+        /* flex-shrink: 0; */
+    }
+  }
+
+@media (max-width: 1024px) {
+    .container {
+      background: rgba(255, 255, 0, 0.203);
+    }
+  }
+
+@media (max-width: 768px) {
+    .container {
+      background: rgba(0, 128, 0, 0.202);
+    }
+  }
+
+/* .mainmenu ul {
+    display:flex;
+    justify-content: space-between;
+}
+
+.mainmenu li {
+    flex: 1;
+    border: black solid 1px;
+    font-weight: bold;
+    padding: 20px 10px 20px 10px;
+    border-radius: 15px;
+    margin:5px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+} */
